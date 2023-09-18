@@ -12,3 +12,6 @@ Nesse diagrama eu segui a seguinte base, o jogador ira interagir com o inicio e 
 ## Diagrama de Classe
 No diagrama de classe, fiz as classes de persoangem, para servir como classe do jogador, a do jogo, controles que servirão para guiar o jogador, slime que seriam os coletáveis que influenciam na classe de pontuação que vai mostrar a quantidade e o total de pontos do jogador e as nuvens que são elementos que interagem com o jogo.
 ![image](https://github.com/GuilhermeM777/Jort-Run/assets/127865701/5eaba533-f4f7-444c-838f-1f6fca9af6b4)
+
+## Código de Pulo
+Não somente no meu, os códigos que usei para o pulo não estavam indo, e estavam apenas deteriorando o projeto, peço perdão pela ausência dele, tentei de diversas maneiras e não ia, porém ai contém movimentação e colisão.
