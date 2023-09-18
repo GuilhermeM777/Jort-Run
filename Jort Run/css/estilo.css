@@ -1,0 +1,15 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+canvas {
+	background:#87CEEB;
+}
+
+#Imagem {
+	position: absolute;
+	size-adjust: 50px;
+	bottom: 450px;
+	width: 500px;
+	right: 1220px;
+}
