@@ -142,8 +142,8 @@ let personagemTamanho = 5;
 let personagemX = canvasWidth / 2;
 let personagemY = canvasHeight - 2 * personagemTamanho;
 let velocidade = 10;
-let salto = 45;
-let gravidade = 0;
+let salto = 35;
+let gravidade = 1;
 let chao = canvasHeight - 2 * personagemTamanho;
 
 // Posições dos bancos
@@ -212,6 +212,7 @@ function atualizar() {
     personagemX = Math.max(personagemX, 30);  // Não ultrapassar a borda esquerda
 
     requestAnimationFrame(atualizar);
+
 }
 
 function lidarComTeclado(e) {
@@ -219,15 +220,13 @@ function lidarComTeclado(e) {
         personagemX -= velocidade;
     } else if (e.key === 'ArrowRight' || e.key === 'd') {
         personagemX += velocidade;
-    } else if ((e.key === 'ArrowUp' || e.key === 'w') && noChao) {
-        
-        if (!pulando) {
-            pulando = true;
-        }
+    } else if ((e.key === 'ArrowUp' || e.key === 'w')) {
+        personagemY -= 5
     }
 }
 
 // Adicione o ouvinte de eventos ao documento, não à janela
 document.addEventListener('keydown', lidarComTeclado);
+
 
 atualizar();
